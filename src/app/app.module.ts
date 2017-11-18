@@ -8,6 +8,9 @@ import { CardComponent } from './card/card.component';
 import { JumboComponent } from './jumbo.component';
 import { EncapsulationComponent } from './encapsulation/encapsulation.component';
 import { EncapInnerComponent } from './encapsulation/encap-inner.component';
+import { DatabindingComponent } from './databinding/databinding.component';
+import { FormsModule } from '@angular/forms';
+import { MyCardComponent } from './databinding/my-card.component';
 
 
 @NgModule({
@@ -17,10 +20,13 @@ import { EncapInnerComponent } from './encapsulation/encap-inner.component';
     CardComponent,
     JumboComponent,
     EncapsulationComponent,
-    EncapInnerComponent
+    EncapInnerComponent,
+    DatabindingComponent,
+    MyCardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
