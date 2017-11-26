@@ -32,3 +32,14 @@
   </div>
 </div>
 <app-my-card [img]="'https://developer.android.com/_static/images/android/touchicon-180.png'" [ttl]="'Android Professional'" [info]="'Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components.'" (cardClick)="onCardClick($event)"></app-my-card>
+
+<div class="row">
+  <div class="col-md-12">
+    <app-cmp-one (colored)="onColored($event)"></app-cmp-one>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <app-cmp-two [stngs]="st"></app-cmp-two>
+  </div>
+</div>

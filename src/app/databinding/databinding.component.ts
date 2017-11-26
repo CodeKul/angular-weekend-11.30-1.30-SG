@@ -15,6 +15,9 @@ export class DatabindingComponent implements OnInit {
     txt: 'Your name'
   }
   ;
+
+  st = {};
+
   constructor() { }
 
   ngOnInit() {
@@ -30,5 +33,9 @@ export class DatabindingComponent implements OnInit {
 
   onCardClick(str: string) {
     this.nm = str;
+  }
+
+  onColored(st: {}) {
+    this.st = st;
   }
 }

@@ -11,6 +11,8 @@ import { EncapInnerComponent } from './encapsulation/encap-inner.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { FormsModule } from '@angular/forms';
 import { MyCardComponent } from './databinding/my-card.component';
+import { CmpOneComponent } from './databinding/cmp-one.component';
+import { CmpTwoComponent } from './databinding/cmp-two.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { MyCardComponent } from './databinding/my-card.component';
     EncapsulationComponent,
     EncapInnerComponent,
     DatabindingComponent,
-    MyCardComponent
+    MyCardComponent,
+    CmpOneComponent,
+    CmpTwoComponent
   ],
   imports: [
     BrowserModule,
