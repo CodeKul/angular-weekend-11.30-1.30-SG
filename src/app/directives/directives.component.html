@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1> Directives </h1>
+    <hr>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div [ngClass]="{'alert': true, 'alert-success':true}">
+      Welcome codekul
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div [ngStyle]="{'border':'1px dotted red', 'background':'red'}">
+      Welcome codekul
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div [mkAlt]="'1px solid blue'">
+      This is custom attribute directive
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <app-nav-v1></app-nav-v1>
+  </div>
+</div>
