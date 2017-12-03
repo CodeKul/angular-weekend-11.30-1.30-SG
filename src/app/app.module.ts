@@ -19,6 +19,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { AlertMakerDirective } from './directives/alert-maker.directive';
 import { NavV1Component } from './directives/nav-v1.component';
 import { NvDirective } from './directives/nv.directive';
+import { UnlessDirective } from './directives/unless.directive';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { NvDirective } from './directives/nv.directive';
     DirectivesComponent,
     AlertMakerDirective,
     NavV1Component,
-    NvDirective
+    NvDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,

@@ -23,6 +23,8 @@ export class AlertMakerDirective {
   @HostBinding('class.alert-info')
   clsInf: boolean;
 
+  isSh = true;
+
   constructor(
     private elRf: ElementRef,
     private rend: Renderer2

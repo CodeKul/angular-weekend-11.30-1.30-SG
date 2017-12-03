@@ -8,6 +8,16 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class DirectivesComponent implements OnInit {
 
+  isSh = true;
+  mobiles = [
+    'Android',
+    'Apple',
+    'Windows',
+    'Moto',
+    'HTC'
+  ];
+  day = 1;
+
   constructor() { }
 
   ngOnInit() {

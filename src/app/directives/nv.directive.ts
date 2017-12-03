@@ -1,9 +1,9 @@
-import { Output, EventEmitter } from '@angular/core';
 import {
   Directive,
   HostBinding,
   HostListener,
-  EventEmitter
+  EventEmitter,
+  Output
 } from '@angular/core';
 
 @Directive({

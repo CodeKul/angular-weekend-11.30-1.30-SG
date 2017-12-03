@@ -28,6 +28,59 @@
 </div>
 <div class="row">
   <div class="col-md-12">
-    <app-nav-v1></app-nav-v1>
+    <p>First {{isSh}}</p>
+    <app-nav-v1 *ngIf="isSh"></app-nav-v1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <p>Second {{isSh}}</p>
+    <div template="ngIf isSh">
+      <app-nav-v1></app-nav-v1>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <p>Third {{isSh}}</p>
+    <ng-template [ngIf]="isSh">
+      <app-nav-v1></app-nav-v1>
+    </ng-template>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <input type="button" value="Okay" (click)="isSh = !isSh">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-2">
+    <ul>
+      <li class="alert alert-info" *ngFor="let mob of mobiles; let pos = index;">{{mob}} => {{pos}}</li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div [ngSwitch]="day">
+      <p *ngSwitchCase="1">Monday</p>
+      <p *ngSwitchCase="2">Tuesday</p>
+      <p *ngSwitchDefault>Off</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="text" [(ngModel)]="day">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div *unless="isSh">
+      Pls show This
+    </div>
   </div>
 </div>
