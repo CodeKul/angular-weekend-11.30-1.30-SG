@@ -1,4 +1,4 @@
-import { Input, OnChanges } from '@angular/core';
+import { Input, OnInit, OnChanges } from '@angular/core';
 import {
   Directive,
   TemplateRef,
@@ -13,7 +13,7 @@ import {
 export class UnlessDirective implements OnChanges {
 
   @Input('unless')
-  cnd: boolean;
+  isSh: boolean;
 
   constructor(
     private tmRef: TemplateRef<any>,
@@ -22,7 +22,7 @@ export class UnlessDirective implements OnChanges {
     console.log(vcRef);
   }
   ngOnChanges() {
-     if (!this.cnd) {
+     if (!this.isSh) {
       this.vcRef.createEmbeddedView(this.tmRef);
     }else {
       this.vcRef.clear();

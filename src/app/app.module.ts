@@ -20,6 +20,15 @@ import { AlertMakerDirective } from './directives/alert-maker.directive';
 import { NavV1Component } from './directives/nav-v1.component';
 import { NvDirective } from './directives/nv.directive';
 import { UnlessDirective } from './directives/unless.directive';
+import { LocalRefsComponent } from './local-refs/local-refs.component';
+import { ContentProjectionComponent } from './content-projection/content-projection.component';
+import { PassContentComponent } from './content-projection/pass-content.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { InnerOneComponent } from './lifecycle/inner-one.component';
+import { ServicesComponent } from './services/services.component';
+import { LocalStorageService } from './services/local-storage.service';
+import { ProgressBarComponent } from './services/progress-bar.component';
+import { CalcComponent } from './services/calc.component';
 
 
 @NgModule({
@@ -38,7 +47,15 @@ import { UnlessDirective } from './directives/unless.directive';
     AlertMakerDirective,
     NavV1Component,
     NvDirective,
-    UnlessDirective
+    UnlessDirective,
+    LocalRefsComponent,
+    ContentProjectionComponent,
+    PassContentComponent,
+    LifecycleComponent,
+    InnerOneComponent,
+    ServicesComponent,
+    ProgressBarComponent,
+    CalcComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +64,9 @@ import { UnlessDirective } from './directives/unless.directive';
     MatStepperModule,
     RatingModule
   ],
-  providers: [],
+  providers: [
+    LocalStorageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
